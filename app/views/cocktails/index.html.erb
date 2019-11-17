@@ -1,0 +1,30 @@
+<div class="banner">
+  <div class="container">
+    <h1>Drinking area</h1>
+    <h4><span id="banner-typed-text"></span></h4>
+    <%= link_to 'Add a new cocktail', new_cocktail_path, class: "btn btn-grad btn-1" %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="container mt-5">
+    <h2>Our drinks:</h2>
+    <div class="cards mt-3">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)) %>')">
+          <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</div>

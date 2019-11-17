@@ -1,2 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.banner {
+  background-color: #754826;
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://cdn.pixabay.com/photo/2017/08/03/21/48/drinks-2578446_960_720.jpg');
+  // background-size: cover;
+}
